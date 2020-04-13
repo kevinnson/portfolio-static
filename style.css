@@ -22,6 +22,19 @@
     margin: auto;
 }
 
+.vid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    top: 150 px;
+    padding-top: 25px;
+}
+
+iframe {
+    max-width: 80%;
+    margin: auto;
+}
+
 body {
     font-family: Arial, Verdana, sans-serif;
     font-size: 16px;
