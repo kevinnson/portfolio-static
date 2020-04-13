@@ -32,7 +32,6 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     top: 150 px;
-    padding-top: 25px;
 }
 
 .project {
