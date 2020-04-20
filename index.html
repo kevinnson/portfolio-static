@@ -3,20 +3,18 @@
     <head>
         <title>CS 185: Kevin Son</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script defer src="functions.js"></script>
     </head>
-    <body>
+    <body onload="highlightTab('.index'); initializeScrollButton();">
         <div class="header">
             <h1>Welcome to my portfolio!</h1>
         </div>
-        <div class="nav-bar">
-            <div class="tab">
-                <button type="button" onclick="window.location.href = 'index.html';">Home</button>
-                <button type="button" onclick="window.location.href = 'images-page.html';">Drawings</button>
-                <button type="button" onclick="window.location.href = 'videos-page.html';">Videos</button>
-                <button type="button" onclick="window.location.href = 'projects-page.html';">Projects</button>
-                <button type="button" onclick="window.location.href = 'https://github.com/kevinnson';">Github</button>
-            </div>
+        <div id="nav-bar">
         </div>
+        <script type="text/javascript">
+            $("#nav-bar").load("navigation.html");
+        </script>
         <div id="main-body">
             <div class="profile-pic">
                 <img src="images/profile.jpg">
@@ -25,9 +23,7 @@
                 <h3>About Me</h3>
                 <p>
                     Hello! My name is Kevin Son, and I am studying computer science
-                    at the University of California, Santa Barbara. I currently
-                    don't have a picture of myself, but here's a picture of a
-                    white german shepherd which is my favorite dog breed. Besides
+                    at the University of California, Santa Barbara. Besides
                     having an interest in software engineering and data analysis,
                     I also enjoy using a subset of Adobe Products to dabble in
                     photography, video editting, and graphic designing on my
@@ -37,7 +33,8 @@
 
                     Currently, this website is under construction. To see some of
                     my graphic design skills, take a look at my Drawings page. For
-                    software development, take a look at my Projects page!
+                    software development, take a look at my Projects page or click
+                    on my GitHub tab!
                 </p>
             </div>
         </div>
