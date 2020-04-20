@@ -22,18 +22,19 @@
 
 
 #main-body {
-    /* display: flex; */
     margin-top: 1rem;
 }
 
 .profile-pic {
-    max-width: 500px;
+    max-width: 400px;
     float: left;
     margin-right: 20px;
+    width: 50%;
 }
 
 .profile-pic > img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .about {
@@ -43,14 +44,17 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
     grid-gap: 2rem;
-    top: 150px;
+    /* top: 150px; */
+}
+
+.pic {
+    margin: auto;
 }
 
 .pic > img {
-    max-width: 80%;
-    margin: auto;
+    max-width: 100%;
 }
 
 .vid-gallery {
@@ -104,6 +108,7 @@ h2 {
 h3 {
     color: black;
 }
+
 
 button {
     color: white;
