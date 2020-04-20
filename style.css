@@ -1,5 +1,6 @@
 #nav-bar {
     position: sticky;
+    /* margin-top: 1rem; */
 }
 .nav-bar {
     display: flex;
@@ -21,13 +22,23 @@
 
 
 #main-body {
-    display: flex;
-    margin: 1rem;
+    /* display: flex; */
+    margin-top: 1rem;
 }
 
-.about > p {
+.profile-pic {
+    max-width: 500px;
+    float: left;
+    margin-right: 20px;
+}
+
+.profile-pic > img {
+    max-width: 100%;
+}
+
+.about {
     color: black;
-    margin-left: 0px;
+    padding-right: 10px;
 }
 
 .gallery {
@@ -56,10 +67,6 @@
 
 .icon > a > img {
     max-width: 100%;
-}
-
-.profile-pic > img {
-    max-width: 80%;
 }
 
 .intro > p {
@@ -92,7 +99,6 @@ h1 {
 
 h2 {
     color: rgb(0,126,221);
-    margin-left: 50px;
 }
 
 h3 {
