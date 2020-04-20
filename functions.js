@@ -66,17 +66,8 @@ function initializeScrollButton() {
         currHeight = window.innerHeight;
         quarter = currHeight / 4;
 
-        console.log('window height:')
-        console.log(currHeight);
-
-        console.log('quarter of page:')
-        console.log(quarter);
-
         // get the scroll position
         scrollPos = document.documentElement.scrollTop
-
-        console.log('scroll position:')
-        console.log(scrollPos);
 
         // if past a quarter, show the button
         if (scrollPos > quarter) {
