@@ -43,3 +43,49 @@ function initalizeLightBox() {
 
     });
 }
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function initializeScrollButton() {
+    // create button element and add it to the body
+    var sb = document.createElement('button');
+    sb.id = 'scroll-button';
+    sb.innerHTML = 'Back to Top'
+    document.body.appendChild(sb);
+
+    // add listener for button functionality
+    sb.addEventListener('click', scrollToTop);
+
+    // have the button to show once past quarter of page
+    window.addEventListener('scroll', function() {
+        // calculate quarter of the page
+        // get the height of the window
+        currHeight = window.innerHeight;
+        quarter = currHeight / 4;
+
+        console.log('window height:')
+        console.log(currHeight);
+
+        console.log('quarter of page:')
+        console.log(quarter);
+
+        // get the scroll position
+        scrollPos = document.documentElement.scrollTop
+
+        console.log('scroll position:')
+        console.log(scrollPos);
+
+        // if past a quarter, show the button
+        if (scrollPos > quarter) {
+            sb.classList.add('show');
+        }
+
+        // remove the button if not past a quarter of the page
+        if (scrollPos <= quarter) {
+            sb.classList.remove('show');
+        }
+    });
+}
