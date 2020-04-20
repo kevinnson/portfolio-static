@@ -1,9 +1,24 @@
+#nav-bar {
+    position: sticky;
+}
 .nav-bar {
     display: flex;
     background-color: rgb(0,187,136);
-    padding: 10px;
-    position: sticky;
 }
+
+.nav-bar > .tab {
+    padding: 20px;
+}
+
+.nav-bar > .tab > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar > .tab:hover {
+    background-color: DarkCyan;
+}
+
 
 #main-body {
     display: flex;

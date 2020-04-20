@@ -3,20 +3,19 @@
     <head>
         <title>Kevin Son - Videos</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     </head>
     <body>
         <div class="header">
             <h1>Projects</h1>
         </div>
-        <div class="nav-bar">
-            <div class="tab">
-                <button type="button" onclick="window.location.href = 'index.html';">Home</button>
-                <button type="button" onclick="window.location.href = 'images-page.html';">Drawings</button>
-                <button type="button" onclick="window.location.href = 'videos-page.html';">Videos</button>
-                <button type="button" onclick="window.location.href = 'projects-page.html';">Projects</button>
-                <button type="button" onclick="window.location.href = 'https://github.com/kevinnson';">Github</button>
-            </div>
+        <div id="nav-bar">
         </div>
+        <script type="text/javascript">
+            $(function() {
+                $("#nav-bar").load("navigation.html");
+            });
+        </script>
         <div class="intro">
             <p>
                 Here are a few projects I've done through my undergrad.
