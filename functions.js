@@ -35,18 +35,13 @@ function initalizeLightBox() {
             // light box doesn't have opened attribute anymore since it's going to close
             lb.classList.remove('opened');
         }
-        // allows user to exit by clicking outside of the image aka the current target
-        // target is the lightbox div itself, so not clicking will not exit
-        else {
-            return;
-        }
-
     });
 }
 
 function scrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0; // for firefox
+    document.documentElement.scrollTop = 0; // for chrome
+    window.pageYOffset = 0; // for other browsers
 }
 
 function initializeScrollButton() {

@@ -42,6 +42,7 @@
 
 #scroll-button.show {
     display: block;
+    cursor: pointer;
 }
 
 .profile-pic {
