@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css'
 import TabList from './components/TabList'
 import Body from './components/Body'
+import Header from './components/Header'
 
 export class App extends Component {
     constructor() {
@@ -43,6 +44,9 @@ export class App extends Component {
         ]
         return (
             <div className="body">
+                <div className="header">
+                    <Header activeTab = { this.state.activeTab }/>
+                </div> 
                 <div className="nav-bar">
                     <TabList
                         tabs = { tabs }
@@ -51,7 +55,7 @@ export class App extends Component {
                     />
                 </div>
                 <div className="main-body">
-                    <Body activeTab={ this.state.activeTab }/>
+                    <Body activeTab = { this.state.activeTab }/>
                 </div>
             </div>
         );

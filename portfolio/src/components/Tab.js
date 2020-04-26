@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 export class Tab extends Component {
+
     addStyling = () => {
         if (this.props.tab.id === this.props.activeTab) {
-            return { backgroundColor: 'gray' }
+            return { backgroundColor: 'DarkCyan' }
         }
         else {
-            return { backgroundColor: 'white' }
+            return { backgroundColor: 'rgb(0, 187, 136)' }
         }
     }
+
     render() {
         return (
             <div
@@ -16,7 +18,7 @@ export class Tab extends Component {
                 style={ this.addStyling() }
                 onClick ={ this.props.changeTab.bind(this, this.props.tab.id) }
             >
-                <h2>{ this.props.tab.title }</h2>
+                <p>{ this.props.tab.title }</p>
             </div>
         );
     }
