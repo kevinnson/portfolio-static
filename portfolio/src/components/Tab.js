@@ -12,15 +12,29 @@ export class Tab extends Component {
     }
 
     render() {
-        return (
-            <div
-                className='tab'
-                style={ this.addStyling() }
-                onClick ={ this.props.changeTab.bind(this, this.props.tab.id) }
-            >
-                <p>{ this.props.tab.title }</p>
-            </div>
-        );
+        const chosen = this.props.activeTab;
+        if (chosen === 5) {
+            return (
+                <div
+                    className='tab'
+                    style={ this.addStyling() }
+                    onClick ={window.location.href = "https://github.com/kevinnson" }
+                >
+                    <p>{ this.props.tab.title }</p>
+                </div>
+            );
+        }
+        else {
+            return (
+                <div
+                    className='tab'
+                    style={ this.addStyling() }
+                    onClick ={ this.props.changeTab.bind(this, this.props.tab.id) }
+                >
+                    <p>{ this.props.tab.title }</p>
+                </div>
+            );
+        }
     }
 }
 

@@ -16,7 +16,7 @@ export class Header extends Component {
             return <h1>Projects</h1>
         }
         else {
-            return ""
+            return <h1>Welcome to my portfolio!</h1>
         }
     }
     render() {

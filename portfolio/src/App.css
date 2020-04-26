@@ -28,7 +28,8 @@
 }
 
 .body {
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .profile-pic {
@@ -45,4 +46,73 @@
 
 .about {
     padding-right: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, auto));
+    grid-gap: 2rem;
+    margin-top: 20px;
+}
+
+.pic {
+    margin: auto;
+}
+
+.pic > img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.vid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, auto));
+    grid-gap: 2rem;
+    margin-top: 20px;
+}
+
+iframe {
+    max-width: 100%;
+    margin: auto;
+}
+
+.project {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-bottom: 50px;
+    min-width: 150px;
+}
+
+.icon > a > img {
+    max-width: 100%;
+}
+
+.intro > p {
+    color: black;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.description > p {
+    background-color: rgb(0,126,221);
+    color: white;
+    padding: 20px;
+}
+
+.description > h2 {
+    color: rgb(0,126,221);
+}
+
+.body {
+    margin-bottom: 20px;
 }
