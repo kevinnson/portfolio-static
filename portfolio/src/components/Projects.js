@@ -13,13 +13,13 @@ export class Projects extends Component {
                         image will route to the GitHub repository.
                     </p>
                 </div>
-                <div class="project">
-                    <div class="icon">
+                <div className="project">
+                    <div className="icon">
                         <a href="https://github.com/MatthewPontarolo/ThinkFast">
                             <img src= { process.env.PUBLIC_URL + "/thinkfast.png"} alt = "think fast"/>
                         </a>
                     </div>
-                    <div class="description">
+                    <div className="description">
                         <h2>ThinkFast</h2>
                         <p>
                             ThinkFast is a collection of brain-games that are thrown
@@ -42,13 +42,13 @@ export class Projects extends Component {
                         </p>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="icon">
+                <div className="project">
+                    <div className="icon">
                         <a href="https://github.com/MatthewPontarolo/SpeedChess">
                             <img src= { process.env.PUBLIC_URL + "/speedchess.png"} alt = "speed chess"/>
                         </a>
                     </div>
-                    <div class="description">
+                    <div className="description">
                         <h2>SpeedChess</h2>
                         <p>
                             SpeedChess is a multiplayer game of chess, with some rules

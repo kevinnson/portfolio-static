@@ -5,7 +5,7 @@ export class Home extends Component {
         return (
             <div className="home-body">
                 <div className="profile-pic">
-                    <img src = { process.env.PUBLIC_URL + '/profile.jpg' } alt = "profile picture"/>
+                    <img src = { process.env.PUBLIC_URL + '/profile.jpg' } alt = "profile"/>
                 </div>
                 <div className="about">
                     <h3>About Me</h3>
